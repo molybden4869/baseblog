@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'TeamController@index');
+Route::get('/teams/{team}', 'PostController@index');
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/posts/create', 'PostController@create');
+    Route::get('/teams/{team}/posts/{post}/edit', 'PostController@edit');
+    Route::put('/posts/{post}', 'PostController@update');
+    Route::post('/posts', 'PostController@store');
 });
+Route::get('/teams/{team}/posts/{post}', 'PostController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+

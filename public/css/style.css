@@ -1,0 +1,50 @@
+.explanation{
+    margin-left: 70px;
+}
+
+.team_list{
+    margin: 100px auto 0px;
+    width:950px;
+    height: 500px;
+    background: White;
+}
+
+.leagues {
+    margin-left: 130px;
+    width:700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leagues div {
+    margin-top: 30px;
+}
+
+.teams{
+    padding-top: 10px;
+}
+
+.team{
+    padding-bottom: 20px;
+}
+
+.post{
+    margin: 0px auto;
+    width:600px;
+    height: 150px;
+    background: white;
+}
+
+.title{
+    margin-left: 220px;
+    height: 40px;
+}
+
+.title_name{
+    padding-top: 10px;
+}
+
+.dumy_post{
+    width: 600px;
+    height: 150px;
+}
