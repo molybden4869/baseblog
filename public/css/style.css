@@ -1,16 +1,18 @@
+/** ホーム画面 **/
 .explanation{
-    margin-left: 70px;
+   margin-top: 20px;
+   margin-left: 430px;
 }
 
 .team_list{
-    margin: 100px auto 0px;
-    width:950px;
+    margin: 50px auto 0px;
+    width:800px;
     height: 500px;
     background: White;
 }
 
 .leagues {
-    margin-left: 130px;
+    margin-left: 45px;
     width:700px;
     display: flex;
     justify-content: space-between;
@@ -18,6 +20,7 @@
 
 .leagues div {
     margin-top: 30px;
+    font-size: 15px;
 }
 
 .teams{
@@ -28,23 +31,132 @@
     padding-bottom: 20px;
 }
 
+
+/** 記事投稿画面 **/
+.form-label{
+    margin-left: 90px;
+}
+
+.form-field{
+    margin-left: 180px;
+}
+
+.form-field select{
+    width: 200px;
+}
+
+.form-field textarea{
+    width: 400px;
+    height: 10em;
+}
+
+.form-button{
+    margin-left: 120px;
+}
+
+
+/** 記事一覧画面 **/
 .post{
+    background: white;
     margin: 0px auto;
     width:600px;
-    height: 150px;
-    background: white;
 }
 
 .title{
     margin-left: 220px;
-    height: 40px;
+    padding-top: 15px;
 }
 
-.title_name{
-    padding-top: 10px;
+.body{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 235px;
+    font-size: 15px;
+    color: #555;
 }
 
-.dumy_post{
+.detail{
+    padding-top: 15px;
+    margin-left: 240px;
+}
+
+.detail-1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-bottom: -20px;
+}
+
+.detail-2{
+    margin-left: 130px;
+    color: orange
+}
+
+.dumy-post{
     width: 600px;
-    height: 150px;
+    height: 50px;
+    background-color: #f8fafc;
+}
+
+.paginate{
+    padding-left: 245px;
+    background-color: #f8fafc;
+}
+
+
+/** 記事詳細画面 **/
+.post-show{
+    margin: 0px auto;
+    width:800px;
+    height: auto;
+    background: white;
+    padding-bottom: 30px;
+}
+
+.head-show{
+    padding-bottom:10px;
+    border-bottom: 1.5px dashed;
+}
+
+.title-show{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.detail-show{
+    margin-left: 430px;
+}
+
+.detail-2-show{
+    margin-left: 140px;
+    color: orange
+}
+
+.body-show{
+    padding-bottom: 100px;
+}
+
+.content{
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-bottom: 200px;
+    font-size: 1.2em;
+}
+
+.button-auth{
+    margin-left: 290px;
+    display: flex;
+    gap: 0px 30px; 
+}
+
+.button{
+    margin-left: 360px;
+}
+
+
+/** Userの投稿記事一覧 **/
+
+.post-user{
+    margin-top: 50px;
+    color: orange
 }

@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index(Team $team, Post $post)
     {
         $posts = Team::find($team->id)->posts();
-        return view('Team.index')->with(['posts' => $posts->orderBy('updated_at', 'DESC')->paginate(1),
+        return view('Team.index')->with(['posts' => $posts->orderBy('updated_at', 'DESC')->paginate(2),
         'team' => $team]);
     }
     
@@ -25,9 +25,9 @@ class PostController extends Controller
     
     public function create()
     {
-        $team = new Team;
-        $teams = $team->getTeamLists()->prepend('チームを選択', '');
-        return view('create')->with(['teams' => $teams]);
+        $teams = new Team;
+        $team_lists = $teams->getTeamLists()->prepend('チームを選択', '');
+        return view('create')->with(['team_lists' => $team_lists]);
     }
     
     public function store(PostRequest $request, Post $post)
@@ -51,5 +51,12 @@ class PostController extends Controller
         $input = $request['post'];
         $post->fill($input)->save();
         return redirect('/teams/' . $post->team_id . '/posts/' . $post->id);
+    }
+    
+    public function destroy(Post $post, Team $team)
+    {
+        $team = $post->team->id;
+        $post->delete();
+        return redirect('/teams/' . $team);
     }
 }

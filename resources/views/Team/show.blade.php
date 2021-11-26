@@ -1,28 +1,51 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        
-        <title>baseblog</title>
-        
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"
-        >
-    </head>
-    <body>
-        <h1>べーすぶろぐ</h1>
-        <p>「野球」がテーマのブログサイトです </p>
-        <p> 野球場に行った感想やテレビ観戦での感想、美味しかった球場のご飯</p>
-        <p> 選手の最新情報、野球のデータに関すること など野球に関することを書いて共有しよう！！</p>
-        
+@extends('layouts.app')
+
+@section('content')
+    <div class="post-show">
+        <div class="head-show">
+            <h1 class="title-show">{{ $post->title }}</h1>
+            <div class="detail-show">
+                <div class="detail-1">
+                    <p>投稿者：{{ $post->user->name }}</p>
+                    <p>投稿日時：{{ $post->created_at }}</p>
+                </div>
+                <div class="detail-2-show">
+                    編集日時：{{ $post->updated_at }}
+                </div>
+            </div>
+        </div>
+        <div class="body_show">
+            <p class="content">{!! nl2br(e($post->body)) !!}</p>
+        </div>
         @if ($post->user_id == Auth::id())
-            <div class='edit'>[<a href="/teams/{{ $team->id }}/posts/{{ $post->id }}/edit">編集</a>]</div>
+            <div class="button-auth">
+                <button type="submit" class="btn btn-primary" onclick="location.href='/teams/{{ $team->id }}'">
+                    戻る
+                </button>
+                <button type="submit" class="btn btn-primary" onclick="location.href='/teams/{{ $team->id }}/posts/{{ $post->id }}/edit'">
+                    編集
+                </button>
+                <form action="/posts/{{ $post->id }}" id="form_delete" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button type="button" class="btn btn-primary" onclick="return deletePost(this);">
+                        削除
+                    </button>
+                </form>
+            </div>
+        @else
+            <div class="button">
+                <button type="submit" class="btn btn-primary" onclick="location.href='/teams/{{ $team->id }}'">
+                    戻る
+                </button>
+            </div>
         @endif
-        <div class='post'>
-            <h2 class='title'>{{ $post->title }}</h2>
-            <p class='body'>{{ $post->body }}</p>
-            <p class='updated_at'>{{ $post->updated_at }}</p>
-        </div>  
-        <div class='back'>[<a href="/teams/{{ $team->id }}">戻る</a>]</div>
-    </body>
-</html>
+    </div>
+    <script>
+        function deletePost(e) {
+            if (confirm('本当に削除しますか？')) {
+                document.getElementById('form_delete').submit();
+            }
+        }
+    </script>
+@endsection
