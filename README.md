@@ -9,6 +9,9 @@
 <p>[OS] &ensp; Amazon linux</p>
 <p>[FW] &ensp; Laravel 6</p>
 <p>[DB] &ensp; MariaDB</p>
+
+<h3>・機能一覧</h3>
+<p>[言語] &ensp; PHP</p>
     
 
 
