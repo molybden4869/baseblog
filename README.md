@@ -1,4 +1,4 @@
-<a href="https://baseblog.herokuapp.com"><h1 align="center">baseblog（ベーずぶろぐ）</h1></a>
+<a href="https://baseblog.herokuapp.com"><h1 align="center">baseblog（ベーすぶろぐ）</h1></a>
 <img src="image.png" >
 
 <h3>・アプリの概要</h3>
