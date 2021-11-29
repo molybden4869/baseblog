@@ -11,7 +11,9 @@
 <p>&ensp; [DB] &ensp; MariaDB</p>
 
 <h3>・機能一覧</h3>
-<p> [言語] &ensp; PHP</p>
+<p>&ensp; ・ユーザー登録、ログイン機能</p>
+<p>&ensp; ・記事投稿・編集・削除機能</p>
+
     
 
 
