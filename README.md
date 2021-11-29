@@ -1,5 +1,5 @@
 <a href="https://baseblog.herokuapp.com"><h1 align="center">baseblog（ベーずぶろぐ）</h1></a>
-<img src="image.jpg" >
+<img src="image.png" >
 
 <h3>・アプリの概要</h3>
 <p>&ensp; 野球がテーマのブログ投稿サイトです。</p>
