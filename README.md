@@ -24,5 +24,5 @@
 
 
 <h3>・テストアカウント</h3>
-<p>&ensp; ID : yakyu@example.com</p>
-<p>&ensp; pass : baseball</p> 
+<p>&ensp; ID : test@test.com</p>
+<p>&ensp; pass : baseblog</p> 
