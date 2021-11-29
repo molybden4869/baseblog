@@ -5,10 +5,8 @@
 <p>プロ野球ファンが情報を収集したり、意見を呟いたり、交流したりする場所が欲しかったため作成しました。</p>
 
 <h3>・使用言語・OSなど</h3>
-<div display="flex">
-    <p>[言語]</p>
-    <p>PHP</p>
-</div>
+<p>[言語]  PHP </p>
+
 
 <p>[OS]</p><p>Amazon linux</p>
 <p>[FW]</p><p>Laravel 6</p>
