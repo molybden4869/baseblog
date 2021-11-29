@@ -18,12 +18,13 @@
 
 
 <h3>・工夫した点</h3>
-<p>&ensp; ・ユーザー登録、ログイン機能</p>
+<p>&ensp; ・リレーションを多く使用</p>
+<p>&ensp; ・記事一覧画面の表示</p>
 
 
-    
-
-
+<h3>・テストアカウント</h3>
+<p>&ensp; ID : yakyu@example.com</p>
+<p>&ensp; pass : baseball</p> 
 
 
 
