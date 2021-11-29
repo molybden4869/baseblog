@@ -1,4 +1,4 @@
-<h1>baseblog</h1>
+<h1 align="center">baseblog</h1>
     <h3>アプリの概要</h3>
     
 
