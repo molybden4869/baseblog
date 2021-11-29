@@ -6,7 +6,7 @@
 <p>&ensp; プロ野球ファンが情報を収集したり、意見を呟いたり、交流したりする場所が欲しかったため作成しました。</p>
 
 
-<h3><b>・使用言語・OSなど</b></h3>
+<h3 color=red>・使用言語・OSなど</h3>
 <p>&ensp; [言語] &ensp; PHP</p>
 <p>&ensp; [OS] &ensp; Amazon linux</p>
 <p>&ensp; [FW] &ensp; Laravel 6</p>
