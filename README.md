@@ -1,17 +1,17 @@
 <h1 align="center">baseblog（ベーずぶろぐ）</h1>
 
 <h3>・アプリの概要</h3>
-<p>野球がテーマのブログ投稿サイトです。</p>
-<p>プロ野球ファンが情報を収集したり、意見を呟いたり、交流したりする場所が欲しかったため作成しました。</p>
+<p>&ensp; 野球がテーマのブログ投稿サイトです。</p>
+<p>&ensp; プロ野球ファンが情報を収集したり、意見を呟いたり、交流したりする場所が欲しかったため作成しました。</p>
 
 <h3>・使用言語・OSなど</h3>
-<p>[言語] &ensp; PHP</p>
-<p>[OS] &ensp; Amazon linux</p>
-<p>[FW] &ensp; Laravel 6</p>
-<p>[DB] &ensp; MariaDB</p>
+<p>&ensp; [言語] &ensp; PHP</p>
+<p>&ensp; [OS] &ensp; Amazon linux</p>
+<p>&ensp; [FW] &ensp; Laravel 6</p>
+<p>&ensp; [DB] &ensp; MariaDB</p>
 
 <h3>・機能一覧</h3>
-<p>[言語] &ensp; PHP</p>
+<p>&ensp; [言語] &ensp; PHP</p>
     
 
 
