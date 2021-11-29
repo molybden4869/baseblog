@@ -11,7 +11,7 @@
 <p>&ensp; [DB] &ensp; MariaDB</p>
 
 <h3>・機能一覧</h3>
-<p>&ensp; [言語] &ensp; PHP</p>
+<p> [言語] &ensp; PHP</p>
     
 
 
