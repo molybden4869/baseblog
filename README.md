@@ -21,8 +21,3 @@
 <h3>・工夫した点</h3>
 <p>&ensp; ・リレーションを多く使用</p>
 <p>&ensp; ・記事一覧画面の表示</p>
-
-
-<h3>・テストアカウント</h3>
-<p>&ensp; ID : test@test.com</p>
-<p>&ensp; pass : baseblog</p> 
